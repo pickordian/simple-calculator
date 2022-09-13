@@ -1,47 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Slay Calculator</title>
-  
+    <title>Calculator</title>
+
 </head>
+
 <body>
     <div class="cal">
-    <div id="screen"></div>
-    <div class="buttons">
-    <button class="button big"> Delete</button>
-    <button class="button big"> = </button>
-    <br>
-    <!-- <button class="button" > 1</button>
-    <button class="button" > 2</button>
-    <button class="button" > 3</button>
-    <button class="button" > 4</button>
-    <button class="button" > 5 </button>
-    <button class="button" > 6</button>
-    <button class="button" > 7</button>
-    <button class="button" > 8</button>
-    <button class="button" > 9</button> 
-    <button class="button" > 10</button> -->
-    <button > + </button>
-    <button > 1 </button>
-    <button > 2 </button>
-    <button > 3 </button>
-    <button > - </button>
-    <button > 4 </button>
-    <button > 5 </button>
-    <button > 6 </button>
-    <button > * </button>
-    <button > 7 </button>
-    <button > 8 </button>
-    <button > 9 </button>
-    <button > / </button>
-    <button > 0 </button>
+        <div id="screen"> 
+        <div id="upper-screen"></div>
+        <div id="lower-screen"></div>
+        </div>
+        <div class="buttons">
+            <button class="button big" id="back" onclick="Back()"> Backspace</button> 
+            <button class="button big" id="=" onclick="Equal()"> = </button>
+            <br>
+            <button class="operator" onclick="WriteScreen('+')"> + </button>
+            <button class="num" onclick="WriteScreen('1')"> 1 </button>
+            <button class="num" onclick="WriteScreen('2')"> 2 </button>
+            <button class="num" onclick="WriteScreen('3')"> 3 </button>
+            <button class="operator" onclick="WriteScreen('-')"> - </button>
+            <button class="num" onclick="WriteScreen('4')"> 4 </button>
+            <button class="num" onclick="WriteScreen('5')"> 5 </button>
+            <button class="num" onclick="WriteScreen('6')"> 6 </button>
+            <button class="*" onclick="WriteScreen('*')"> * </button>
+            <button class="num" onclick="WriteScreen('7')"> 7 </button>
+            <button class="num" onclick="WriteScreen('8')"> 8 </button>
+            <button class="num" onclick="WriteScreen('9')"> 9 </button>
+            <button class="/" onclick="WriteScreen('/')"> / </button>
+            <button class="clear" onclick="Clear()"> Clear </button>
+            <button class="num" onclick="WriteScreen('0')"> 0 </button>
+            <button class="frac" onclick="WriteScreen('.')"> . </button>
 
+        </div>
     </div>
-    </div>
-
+    <script src="script.js"> </script>
 </body>
+
 </html>
